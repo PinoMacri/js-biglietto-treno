@@ -44,24 +44,25 @@ let price = (numberKm * 0.21);
 // - (3A2-B-C) :
 let soldiScontatiMinorenni = price * scontoMinorenne / absolutePercentual;
 let soldiScontatiOver = price * scontoOver / absolutePercentual;
+
 if (myAge > max && myAge < min) {
-let prezzoFinaleNormale = price + euro;
-targetElement.innerText = prezzoFinaleNormale;
+let prezzoFinaleNormale = price ;
+targetElement.innerText = `Hey, il costo del tuo biglietto è di soli ${prezzoFinaleNormale.toFixed(2)}€!! `;
 ////console.log(prezzoFinaleNormale)
 }
 else if (myAge <= max ) {
-let prezzoFinaleNormale = price - soldiScontatiMinorenni + euro;
-targetElement.innerText = prezzoFinaleNormale;
+let prezzoFinaleNormale = price - soldiScontatiMinorenni;
+targetElement.innerText = `Hey, il costo del tuo biglietto è di soli ${prezzoFinaleNormale.toFixed(2)}€!! `;
 ////console.log(prezzoFinaleNormale)
 }
 else if (myAge >= min ) {
-let prezzoFinaleNormale = price - soldiScontatiOver + euro ; 
-targetElement.innerText = prezzoFinaleNormale;
+let prezzoFinaleNormale = price - soldiScontatiOver; 
+targetElement.innerText = `Hey, il costo del tuo biglietto è di soli ${prezzoFinaleNormale.toFixed(2)}€!! `;
 ////console.log(prezzoFinaleNormale)
 }
 else {
-let prezzoFinaleNormale = "Ricontrolla i dati Inseriti";
-document.writeln (prezzoFinaleNormale);
+let prezzoFinaleNormale = false ;
+targetElement.innerText = false ; 
 ////console.log(prezzoFinaleNormale);
 }
 
