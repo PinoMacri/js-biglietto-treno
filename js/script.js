@@ -46,17 +46,17 @@ let soldiScontatiMinorenni = price * scontoMinorenne / absolutePercentual;
 let soldiScontatiOver = price * scontoOver / absolutePercentual;
 if (myAge > max && myAge < min) {
 let prezzoFinaleNormale = price + euro;
-document.writeln (prezzoFinaleNormale);2
+targetElement.innerText = prezzoFinaleNormale;
 ////console.log(prezzoFinaleNormale)
 }
 else if (myAge <= max ) {
 let prezzoFinaleNormale = price - soldiScontatiMinorenni + euro;
-document.writeln (prezzoFinaleNormale);
+targetElement.innerText = prezzoFinaleNormale;
 ////console.log(prezzoFinaleNormale)
 }
 else if (myAge >= min ) {
 let prezzoFinaleNormale = price - soldiScontatiOver + euro ; 
-document.writeln (prezzoFinaleNormale);
+targetElement.innerText = prezzoFinaleNormale;
 ////console.log(prezzoFinaleNormale)
 }
 else {
